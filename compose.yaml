@@ -1,0 +1,11 @@
+services:
+  mysql:
+    container_name: 'deepsea-mysql'
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=vessel'
+      - 'MYSQL_PASSWORD=root'
+      - 'MYSQL_ROOT_PASSWORD=root'
+      - 'MYSQL_USER=root'
+    ports:
+      - '3306'
